@@ -1,0 +1,33 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Orchestrator microservice for EKS Saga demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aws-samples/eks-saga-orchestrator.git"
+  },
+  "keywords": [
+    "kubernetes",
+    "microservices",
+    "saga",
+    "amazon-eks",
+    "aws-sns",
+    "aws-sqs",
+    "nodejs"
+  ],
+  "author": "Nagesh Subrahmanyam",
+  "license": "MIT-0",
+  "bugs": {
+    "url": "https://github.com/aws-samples/eks-saga-orchestrator/issues"
+  },
+  "homepage": "https://github.com/aws-samples/eks-saga-orchestrator#readme",
+  "dependencies": {
+    "aws-sdk": "^2.819.0",
+    "moment-timezone": "^0.5.32",
+    "winston": "^3.3.3"
+  }
+}

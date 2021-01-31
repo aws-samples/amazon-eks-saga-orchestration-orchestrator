@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: eks-saga-orchestrator
+  namespace: eks-saga
+data:
+  TZ: "timeZone"
+  REGION: "regionId"
+  INPT_QUEUE_URL : "https://sqs.regionId.amazonaws.com/accountId/eks-saga-orchestrator"
+  POLL_FREQUENCY: "20"
+  ORCHESTRATION: '{"Orders" : {"SUCCESS" : "https://sqs.regionId.amazonaws.com/accountId/eks-saga-inventory-input"},"Inventory" : {"FAIL" : "https://sqs.regionId.amazonaws.com/accountId/eks-saga-orders-rollback"}}'
