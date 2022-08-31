@@ -27,7 +27,7 @@
   "homepage": "https://github.com/aws-samples/eks-saga-orchestrator#readme",
   "dependencies": {
     "aws-sdk": "^2.819.0",
-    "moment-timezone": "^0.5.32",
+    "moment-timezone": "^0.5.35",
     "winston": "^3.3.3"
   }
 }
